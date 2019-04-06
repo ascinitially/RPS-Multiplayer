@@ -1,0 +1,11 @@
+#chat {
+    height:200px;
+}
+
+.img {
+    margin : auto;
+}
+
+.img:hover {
+    cursor: pointer;
+}
