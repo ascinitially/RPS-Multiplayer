@@ -4,8 +4,32 @@
 
 .img {
     margin : auto;
+    font-size : 100px;
 }
 
 .img:hover {
     cursor: pointer;
+}
+
+#bomb {
+    color : red;
+}
+
+#bone {
+    color : green;
+}
+
+#book {
+    color : blue;
+}
+
+#chat {
+    border : 1px solid gray;
+    border-radius : 3px;
+    height : 200px;
+}
+
+ul {
+    list-style-type: none;
+    overflow: auto;
 }

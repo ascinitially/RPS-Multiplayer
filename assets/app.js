@@ -23,7 +23,8 @@ $("#submitChat").on("click", function(){
     var newLi = $("<li>");
     var content = $("#chatInput").val().trim();
     newLi.append(content);
-    $("#chat").append(newLi);
+    $("#chat").prepend(newLi);
+    $("#chatInput").val("");
 })
 
 $("#pLSubmitName").on("click", function() {
@@ -32,9 +33,10 @@ $("#pLSubmitName").on("click", function() {
     nm.text(content);
     $("#pLName").append(nm);
     db.ref('users/pL').set({
-        pLName : content
+        pLName : content,
     });
     $("#pLInput").val("");
+    $("#pLNameInput").hide();
 })
 
 $("#pRSubmitName").on("click", function() {
@@ -43,13 +45,13 @@ $("#pRSubmitName").on("click", function() {
     nm.text(content);
     $("#pRName").append(nm);
     db.ref('users/pR').set({
-        pRName : content
+        pRName : content,
     });
     $("#pRInput").val("");
-
+    $("#pRNameInput").hide();
 })
 
 $(".img").on("click", function() {
-    
+
 
 })
